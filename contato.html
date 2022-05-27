@@ -99,7 +99,48 @@
                             <label for="tg" class="form-check-label">Telegram</label>
                         </div>
                     </div>
-                    
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="selUnidade">Sua Unidade (Cidade):</label>
+                            <select id="selUnidade" class="form-control">
+                                <option value="Geral">Geral</option>
+                                <option value="Guaratinguetá">Guaratinguetá</option>
+                                <option value="Pindamonhangaba">Pindamonhangaba</option>
+                                <option value="Taubaté">Taubaté</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <div>
+                                <label>Motivo do seu contato:</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="inform" value="informacoes" class="form-check-input">
+                                <label for="inform" class="form-check-label">Informações\Dúvidas</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="sugest" value="sugestoes" class="form-check-input">
+                                <label for="sugest" class="form-check-label">Sugestões</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="elogio" value="elogios" class="form-check-input">
+                                <label for="elogios" class="form-check-label">Elogios</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="reclam" value="reclamacoes" class="form-check-input">
+                                <label for="reclam" class="form-check-label">Reclamações</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="motivo" id="outros" value="outros" class="form-check-input">
+                                <label for="outros" class="form-check-label">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txaMensagem">Sua Mensagem:</label>
+                        <textarea id="txaMensagem" rows="5" class="form-control" sytle="resize: none;" required></textarea>
+                    </div>
+                    <button tupe="submit" class="btn btn-info">Enviar</button>
+                    <button tupe="reset" class="btn btn-secondary">Limpar</button>
                 </form>
             </div>
         </div>
@@ -108,7 +149,7 @@
         <hr>
         <p class="float-left text-secondary">
             &copy; 2022 &centerdot; Seu nome &centerdot;
-            <a href="programacao.html" class="text-info">Mapa do site</a>
+            <a href="mapa.html" class="text-info">Mapa do site</a>
         </p>
         <p class="float-right">
             <a href="#" class="text-info">Voltar ao topo</a>
